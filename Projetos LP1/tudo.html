@@ -5,6 +5,7 @@
 
 
 
+
 <script>
 
     function pulaLinha() {
@@ -26,13 +27,19 @@ function pulaLinhaa() {
      }
 
 
+function deixaLetraMaior (frasee) {
+    document.write("<h1>" + frasee + "</h1>")
+};
+
+
 var nome = prompt("DIGITE O SEU NOME");
 
 
 alert("ATENÇÃO");
-document.write("<h2>"    + nome + "</h2>");
+deixaLetraMaior(nome);
 pulaLinhaa();
 mostra(" <h2> Vou te contar uma história... </h2>");
+mostra("<hr>");
 mostra(" <h1> ERA UMA VEZ UM GATO XADREZ. </h1>");
 mostra("ERA UMA VEZ UM GATO XADREZ.");
 mostra("CAIU DA JANELA E FOI SÓ UMA VEZ.");
@@ -57,10 +64,8 @@ mostra("ERA TEIMOSO E BRINCOU COM UM ESPETO.");
 mostra("ERA UMA VEZ UM GATO BRANCO.");
 mostra("ERA TÃO SAPECA QUE PULOU DO BARRANCO.");
 mostra("ERA UMA VEZ UM GATO XADREZ… <h4> QUEM GOSTOU DESTA HISTÓRIA QUE CONTE OUTRA VEZ </h4>");
-
-
-
-
+deixaLetraMaior("FIM");
+mostra("<hr>");
 
 
 
