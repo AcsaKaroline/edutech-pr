@@ -1,0 +1,70 @@
+<meta charset = "UTF-8">
+
+<h1>BEM VINDO(A) A CALCULADORA BÁSICA</h1>
+
+<script>
+
+	function pulaLinha(){
+
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+
+		document.write("<h2>" + frase + "</h2>");
+		pulaLinha();
+	}
+
+	var opcao = prompt("DIGITE A OPÇÃO DESEJADA:\n 1 - Adição\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão ");
+
+	if(opcao == 1){
+
+		var numero = parseInt(prompt("DIGITE UM NÚMERO:"));
+		var numero2 = parseInt(prompt("DIGITE OUTRO NÚMERO:"));
+		var nome = prompt("POR FAVOR,DIGITE SEU NOME:");
+		var resultado = numero + numero2;
+}
+
+	if(opcao == 2){
+
+		var numero = parseInt(prompt("DIGITE UM NÚMERO:"));
+		var numero2 = parseInt(prompt("DIGITE OUTRO NÚMERO:"));
+		var nome = prompt("POR FAVOR, DIGITE SEU NOME");
+		var resultado = numero - numero2;
+}
+
+	if(opcao == 3){
+
+		var numero = parseInt(prompt("DIGITE UM NÚMERO:"));
+		var numero2 = parseInt(prompt("DIGITE OUTRO NÚMERO:"));
+		var nome = prompt("POR FAVOR, DIGITE SEU NOME");
+		var resultado = numero * numero2;
+	}
+
+	if(opcao == 4){
+
+		var numero = parseInt(prompt("DIGITE UM NÚMERO:"));
+		var numero2 = parseInt(prompt("DIGITE OUTRO NÚMERO:"));
+		var nome = prompt("POR FAVOR, DIGITE SEU NOME");
+		var resultado = numero / numero2;
+	}
+
+	mostra(nome + " , o resultado é:" + resultado);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
