@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    alert("Digite tudo em MAIÚSCULO");
+    var idade = parseInt(prompt("Qual é sua idade"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+    var alcoolizado= prompt("Está alcoolizado? Responda S ou N");
+    if( idade >= 18 && temCarteira == "S" && alcoolizado == "N") {
+        mostra("Legal! Você pode dirigir");
+    } else {
+        mostra("Que pena, você ainda não pode dirigir!");
+    }
+</script>
