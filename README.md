@@ -1,2 +1,2 @@
 # edutech-pr
-Repositório de projetos da Trilha de Front-End do Edutech
+Repositório de projetos da aluna Acsa Karoline da Trilha de Front-End do Edutech
