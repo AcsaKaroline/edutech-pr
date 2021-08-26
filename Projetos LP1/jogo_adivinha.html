@@ -18,32 +18,33 @@
 		return Math.round(Math.random() * n);
 	}
 
-	var numeroPensado =sorteia(10);
+	var numeroPensado =sorteia(10)
+	var tentativas = 1;
+
 	alert("Vou pensar em um número e você tenta adivinhar qual é, ok?");
-	var chute = parseInt(prompt("Já pensei, tente adivinhar :)"));
+
+	while(tentativas <= 3){
+
+	var chute= parseInt(prompt("Já pensei, tente adivinhar:)" ));
 
 	if(chute == numeroPensado){
-		mostra("Parabéns, você acertou! Realmente pensei no número");
-		mostra(numeroPensado);
+		mostra("Parabéns, você ACERTOU! O número pensado era " + numeroPensado);
+		break;
+		
+}else{
 
-	}else{
-			mostra("Que pena, você errou. O número que pensei foi");
-			mostra(numeroPensado);
-		}
-	
-	if(numeroPensado > chute){
-		mostra(" Infelizmente,você errou...o número que pensei é maior que o seu chute!");
+	mostra("Que pena, você ERROU!");
 }
 
-	if(numeroPensado < chute) {
-		mostra(" Infelizmente,você errou...o número que pensei é menor que o seu chute!");
-	}
+	tentativas++;
 
-	if(numeroPensado == chute){
-		mostra("Muito bem! Você acertou! O número que pensei é exatamente igual à seu chute!");
-}	
+}
+
+mostra("FIM");
+
 	
 	
 
+	
 
 </script>
