@@ -8,9 +8,6 @@
     pincel.fillRect(0, 0, 600, 400);
 
     var raio = 10;
-    var raios = [];
-    var indiceRaioAtual = 0;
-    
 
     function desenhaCirculo(evento) {
 
@@ -19,21 +16,18 @@
 
         console.log(x + ',' + y);
 
-        if(evento.shiftKey) {
+        if (evento.shiftKey && evento.altKey) {
 
-           raio = raio + 10;
+            alert('Só aperte uma tecla por vez, por favor!');
 
-            
+        } else if(evento.shiftKey && raio + 10 <= 40) {
+            raio = raio + 10;
+
+        } else if(evento.altKey && raio - 5 >= 10) {
+            raio = raio - 5;
+
         }
-        function mudaRaio() {
 
-        indiceRaioAtual++
-        if(indiceRaioAtual >= raios.length) {
-            indiceRaioAtual = 0;
-        }
-
-        return false;
-    }
         pincel.fillStyle = 'blue';
         pincel.beginPath();
         pincel.arc(x, y, raio, 0, 2 * 3.14);
